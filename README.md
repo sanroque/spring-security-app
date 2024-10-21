@@ -28,3 +28,19 @@ Follow the steps below to set up and run the project on your local machine.
 ```bash
 git clone https://github.com/sanroque/spring-security-app.git
 cd spring-security-app
+```
+
+### 2. PostgreSQL
+
+```bash
+spring.datasource.url=jdbc:postgres://localhost:6000/your-database
+spring.datasource.username=your-username
+spring.datasource.password=your-password
+spring.jpa.hibernate.ddl-auto=update
+```
+
+### 3. Build the project
+
+```bash
+mvn spring-boot:run
+```
